@@ -1,8 +1,10 @@
 body {
     font-family: Arial, sans-serif;
+    color: #000;
     text-align: center;
     margin: 20px;
-    background: #C4E0E5;
+    background: linear-gradient(90deg,#ADA996, #EAEAEA, #ADA996);
+    
 }
 
 h2, h3 {
@@ -24,7 +26,7 @@ th, td {
 }
 
 th {
-    background-color: #ACB6E5;
+    background-color: #d4a573;
 }
 
 .input-form {
@@ -41,7 +43,7 @@ th {
 
 button {
     padding: 10px 20px;
-    background-color: #ACB6E5;
+    background-color: #d4a573;
     color: BLACK;
     border: none;
     cursor: pointer;
