@@ -41,6 +41,34 @@ $(document).ready(function() {
 	  return false;
 	});
 
+
+
+	//FILTERRRR
+	// Get all filter buttons and portfolio items
+const filterButtons = document.querySelectorAll('.filter-btn');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+// Add event listeners for each filter button
+filterButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const filter = this.getAttribute('data-filter');
+
+    // Loop through all portfolio items and show/hide based on the filter
+    portfolioItems.forEach(item => {
+      if (filter === 'all') {
+        item.style.display = 'block'; // Show all items
+      } else {
+        if (item.classList.contains(filter)) {
+          item.style.display = 'block'; // Show item if it matches the filter
+        } else {
+          item.style.display = 'none'; // Hide item if it doesn't match the filter
+        }
+      }
+    });
+  });
+});
+
+
 	// Mobile Navigation
 	$('.nav-toggle').on('click', function() {
 		$(this).toggleClass('close-nav');

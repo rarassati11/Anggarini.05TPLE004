@@ -474,6 +474,21 @@ ul li {
 	margin: auto;
 }
 
+.filter-btn {
+	background-color: #1c5248;
+	border-radius: 8px;
+	padding: 10px 20px;
+	margin: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .filter-btn:hover {
+	background-color: #1c5248;
+	color: #fff;
+  }
+
 #portfolio .portfolio-item {
 	right: 0;
 	margin: 0 0 2px;
